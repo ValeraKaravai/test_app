@@ -77,10 +77,11 @@ function clearCanvas() {
 }
 
 function saveImage() {
-    document.getElementById("rec_result").innerHTML = "connection...";
+    var dig = document.querySelector('input[name="action"]:checked').value;
+    document.getElementById("rec_result").innerHTML = "Digits = " + dig + ", connection...";
     var canvas = document.getElementById("stage");
     var dataURL = canvas.toDataURL('img/jpeg');
-    var dig = document.querySelector('input[name="action"]:checked').value;
+
 
     $.ajax({
         type: "POST",

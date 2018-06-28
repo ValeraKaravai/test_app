@@ -10,7 +10,6 @@ class Model(object):
     def __init__(self):
         self.nothing = 0
 
-
     def save_image(self, draw_digit, image):
         filename = 'digit: ' + str(draw_digit) + ', ' + str(uuid.uuid1()) + '.jpeg'
         with open('tmp/' + filename, 'wb') as file:

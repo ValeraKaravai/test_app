@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Digits recognition</title>
-    <link rel="stylesheet" type="text/css" href="static/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
 </head>
 <body>
     <div class="container">
@@ -23,21 +23,23 @@
                     </strong>
                 </button>
             </div>
+
+            <div>
+                Select one of digits<br>
+                <input type="radio" name="action" value="0" id="digit"> 0<br>
+                <input type="radio" name="action" value="1" id="digit"> 1<br>
+                <input type="radio" name="action" value="2" id="digit"> 2<br>
+                <input type="radio" name="action" value="3" id="digit"> 3<br>
+            </div>
         </div>
-        <div>
-            Select one of digits
-            <input type="radio" name="action" value="0" id="digit"> 0
-            <input type="radio" name="action" value="1" id="digit"> 1
-            <input type="radio" name="action" value="2" id="digit"> 2
-            <input type="radio" name="action" value="3" id="digit"> 3
-        </div>
+
         <div class="col-md-6 column">
             <h2>Result:</h2>
             <h3 id="rec_result"></h3>
         </div>
     </div>
-    <script src="static/jquery.min.js"></script>
-    <script src="static/bootstrap.min.js"></script>
-    <script src="static/draw.js"></script>
+    <script src="../static/jquery.min.js"></script>
+    <script src="../static/bootstrap.min.js"></script>
+    <script src="../static/draw.js"></script>
 </body>
 </html>
