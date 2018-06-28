@@ -67,11 +67,11 @@ function mouseup(event) {
 
 function draw() {
     context.fillStyle = '#ffffff';
-    context.fillRect(0, 0, 400, 400);
+    context.fillRect(0, 0, 200, 200);
 }
 
 function clearCanvas() {
-    context.clearRect(0, 0, 400, 400);
+    context.clearRect(0, 0, 200, 200);
     draw();
     document.getElementById("rec_result").innerHTML = "";
 }
