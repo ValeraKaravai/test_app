@@ -76,7 +76,7 @@ function clearCanvas() {
     document.getElementById("rec_result").innerHTML = "";
 }
 
-function saveImg() {
+function saveImage() {
     document.getElementById("rec_result").innerHTML = "connection...";
     var canvas = document.getElementById("stage");
     var dataURL = canvas.toDataURL('img/jpeg');
