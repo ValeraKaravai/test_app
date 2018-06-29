@@ -16,7 +16,7 @@ class Model(object):
             file.write(image)
         print('Image written')
 
-        REGION_HOST = 's3-website.us-east-2.amazonaws.com'
+        REGION_HOST = 's3.us-east-2.amazonaws.com'
         conn = S3Connection(os.environ['AWS_ACCESS_KEY_ID'],
                             os.environ['AWS_SECRET_ACCESS_KEY'],
                             host=REGION_HOST)
