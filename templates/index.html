@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digits recognition</title>
+    <link rel="stylesheet" type="text/css" href="static/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            Draw!
+            <canvas id="stage" width="200" height="200">fsf</canvas>
+            <div>
+                <button type="button" class="btn btn-default butt" onclick="clearCanvas()">
+                    <strong>
+                        Clear
+                    </strong>
+                </button>
+                <button type="button" class="btn btn-default butt" onclick="saveImage()">
+                    <strong>
+                        Save
+                    </strong>
+                </button>
+            </div>
+
+            <div>
+                Select one of digits<br>
+                <input type="radio" name="action" value="0" id="digit"> 0<br>
+                <input type="radio" name="action" value="1" id="digit"> 1<br>
+                <input type="radio" name="action" value="2" id="digit"> 2<br>
+                <input type="radio" name="action" value="3" id="digit"> 3<br>
+            </div>
+        </div>
+
+        <div class="col-md-6 column">
+            <h2>Result:</h2>
+            <h3 id="rec_result"></h3>
+        </div>
+    </div>
+    <script src="static/jquery.min.js"></script>
+    <script src="static/bootstrap.min.js"></script>
+    <script src="static/draw.js"></script>
+</body>
+</html>
